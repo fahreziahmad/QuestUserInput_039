@@ -147,3 +147,17 @@ fun FormRegistrasi() {
                 modifier = Modifier.align(Alignment.Start)
             )
 
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                RadioButton(
+                    selected = jenisKelamin == "Laki-laki",
+                    onClick = { jenisKelamin = "Laki-laki" }
+                )
+                Text("Laki-laki")
+                Spacer(modifier = Modifier.width(16.dp))
+                RadioButton(
+                    selected = jenisKelamin == "Perempuan",
+                    onClick = { jenisKelamin = "Perempuan" }
+                )
+                Text("Perempuan")
+            }
+
