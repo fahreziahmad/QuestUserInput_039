@@ -176,3 +176,20 @@ fun FormRegistrasi() {
                 )
             }
 
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Tombol Submit
+            Button(
+                onClick = { showDialog = true },
+                enabled = disetujui,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = if (disetujui) Color(0xFF4CAF50) else Color.LightGray
+                )
+            ) {
+                Text(text = "Submit", color = Color.White, fontSize = 16.sp)
+            }
+
