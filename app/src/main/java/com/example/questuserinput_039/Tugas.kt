@@ -161,3 +161,18 @@ fun FormRegistrasi() {
                 Text("Perempuan")
             }
 
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // Checkbox Persetujuan
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Checkbox(
+                    checked = disetujui,
+                    onCheckedChange = { disetujui = it }
+                )
+                Text(
+                    text = "Saya setuju dengan syarat dan ketentuan yang berlaku",
+                    fontSize = 13.sp,
+                    color = Color.DarkGray
+                )
+            }
+
