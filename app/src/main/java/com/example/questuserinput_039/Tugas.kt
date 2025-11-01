@@ -124,3 +124,15 @@ fun FormRegistrasi() {
                 )
             }
 
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // Umur
+            OutlinedTextField(
+                value = umur,
+                onValueChange = { umur = it },
+                label = { Text("Umur") },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                modifier = Modifier.fillMaxWidth()
+            )
+
