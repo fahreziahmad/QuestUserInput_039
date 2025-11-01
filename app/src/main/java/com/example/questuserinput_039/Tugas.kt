@@ -46,3 +46,12 @@ fun FormRegistrasi() {
         calendar.get(Calendar.DAY_OF_MONTH)
     )
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(Color(0xFFB3E5FC), Color(0xFF81C784))
+                )
+            )
+            .padding(16.dp)
