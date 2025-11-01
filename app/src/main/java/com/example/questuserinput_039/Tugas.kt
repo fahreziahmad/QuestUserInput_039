@@ -108,3 +108,19 @@ fun FormRegistrasi() {
                     enabled = false, // tidak bisa diketik manual
                     readOnly = true
                 )
+                Spacer(modifier = Modifier.width(6.dp))
+                OutlinedTextField(
+                    value = rt,
+                    onValueChange = { rt = it },
+                    label = { Text("RT") },
+                    modifier = Modifier.weight(1f)
+                )
+                Spacer(modifier = Modifier.width(6.dp))
+                OutlinedTextField(
+                    value = rw,
+                    onValueChange = { rw = it },
+                    label = { Text("RW") },
+                    modifier = Modifier.weight(1f)
+                )
+            }
+
