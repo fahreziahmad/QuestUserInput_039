@@ -213,3 +213,17 @@ fun FormRegistrasi() {
                             fontSize = 14.sp
                         )
                     },
+                    confirmButton = {
+                        Button(
+                            onClick = { showDialog = false },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF03A9F4))
+                        ) {
+                            Text("OK", color = Color.White)
+                        }
+                    },
+                    shape = RoundedCornerShape(16.dp)
+                )
+            }
+        }
+    }
+}
