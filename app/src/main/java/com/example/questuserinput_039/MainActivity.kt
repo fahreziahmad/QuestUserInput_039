@@ -19,8 +19,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestUserInput_039Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // 🔹 Panggil fungsi FormDataDiri() di sini
-                    FormDataDiri(modifier = Modifier.padding(innerPadding))
+                    // 🔹 Panggil fungsi FormRegistrasi() di sini
+                    FormRegistrasi()
                 }
             }
         }
@@ -29,8 +29,8 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true)
 @Composable
-fun FormDataDiriPreview() {
+fun FormRegistrasiPreview() {
     QuestUserInput_039Theme {
-        FormDataDiri()
+        FormRegistrasi()
     }
 }
