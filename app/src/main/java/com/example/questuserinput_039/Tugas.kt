@@ -97,3 +97,14 @@ fun FormRegistrasi() {
             Row(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.fillMaxWidth()
+            ) {
+                OutlinedTextField(
+                    value = tanggalLahir,
+                    onValueChange = {},
+                    label = { Text("Tanggal Lahir") },
+                    modifier = Modifier
+                        .weight(2f)
+                        .clickable { datePickerDialog.show() },
+                    enabled = false, // tidak bisa diketik manual
+                    readOnly = true
+                )
