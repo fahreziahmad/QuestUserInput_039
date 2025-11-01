@@ -136,3 +136,14 @@ fun FormRegistrasi() {
                 modifier = Modifier.fillMaxWidth()
             )
 
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Jenis Kelamin
+            Text(
+                text = "Jenis Kelamin",
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 16.sp,
+                color = Color.Black,
+                modifier = Modifier.align(Alignment.Start)
+            )
+
