@@ -193,3 +193,23 @@ fun FormRegistrasi() {
                 Text(text = "Submit", color = Color.White, fontSize = 16.sp)
             }
 
+            // Dialog hasil submit
+            if (showDialog) {
+                AlertDialog(
+                    onDismissRequest = { showDialog = false },
+                    title = { Text("Berhasil", fontWeight = FontWeight.Bold) },
+                    text = {
+                        Text(
+                            """
+                            Nama: $nama
+                            Alamat: $kota
+                            Tgl Lahir: $tanggalLahir
+                            RT: $rt
+                            RW: $rw
+                            Umur: $umur
+                            Jenis Kelamin: $jenisKelamin
+                            """.trimIndent(),
+                            color = Color.Gray,
+                            fontSize = 14.sp
+                        )
+                    },
