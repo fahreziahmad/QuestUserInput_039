@@ -55,3 +55,10 @@ fun FormRegistrasi() {
                 )
             )
             .padding(16.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState())
+                .fillMaxWidth()
+                .padding(top = 32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
